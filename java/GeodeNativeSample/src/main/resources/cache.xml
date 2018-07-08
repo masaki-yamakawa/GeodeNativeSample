@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cache xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://geode.apache.org/schema/cache" xsi:schemaLocation="http://geode.apache.org/schema/cache http://geode.apache.org/schema/cache/cache-1.0.xsd"
+  version="1.0" copy-on-read="false">
+  <cache-server port="40404" notify-by-subscription="true" />
+
+  <region name="request" refid="PARTITION">
+    <region-attributes>
+      <cache-listener>
+        <class-name>geode.nativesample.MyCacheListener</class-name>
+      </cache-listener>
+    </region-attributes>
+  </region>
+
+  <region name="reply" refid="PARTITION" />
+
+  <serialization-registration>
+    <instantiator id="7">
+      <class-name>geode.nativesample.Response</class-name>
+    </instantiator>
+  </serialization-registration>
+</cache>
