@@ -1,0 +1,15 @@
+build/
+target/
+.idea/
+.gradle/
+.classpath
+.project
+.settings/
+.idea/
+build-eclipse/
+
+
+.vs/
+bin/
+obj/
+packages/

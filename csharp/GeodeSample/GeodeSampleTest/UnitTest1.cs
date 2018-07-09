@@ -23,7 +23,7 @@ namespace GeodeSampleTest
             RequestReply requestReply = new RequestReply(cache);
             Response res = requestReply.Put(777, "Hello World");
             Console.Write("Response=" + res);
-            Assert.AreEqual("777, Hello World", res);
+            Assert.AreEqual("Response [Id=777 ResValue=Hello World]", res.ToString());
         }
     }
 }

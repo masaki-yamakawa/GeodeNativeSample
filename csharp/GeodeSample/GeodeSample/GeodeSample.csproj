@@ -36,7 +36,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Pivotal.Gemfire">
-      <HintPath>..\..\..\..\tools\GemFire\pivotal-gemfire-native-9.1.1-Win64bit\bin\Pivotal.Gemfire.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\..\tools\GemFire\pivotal-gemfire-native-9.2.0-Win64bit\bin\Pivotal.Gemfire.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
